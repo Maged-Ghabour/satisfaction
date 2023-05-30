@@ -40,30 +40,30 @@
                  <div class="mb-3">
                    <label for="quota" class="form-label w-100 text-end">%نسبة الخصم </label>
                     <select class="form-select" aria-label="Default select example" dir="rtl" id="discount"> 
-                        <option   selected disabled>اختار نسبة الخصم </option>
+                        <option   selected disabled value="">اختار نسبة الخصم </option>
                         <option value="25">25%</option>
                         <option value="50">50%</option>
                     </select>
                </div>
-               <div class="output my-5 p-3">
+               <div class="output my-5">
                 <div class="table-responsive">
-                        <table class="table" dir="rtl">
+                        <table class="table m-0" dir="rtl">
                             <body>
                                     <tr>
-                                        <th scope="col">سعر الباقة شامل الضريبة</th>
-                                        <td scope="col" id="quota"></td>
+                                        <th scope="col" class="bg-dark text-white rounded fw-bold">سعر الباقة شامل الضريبة <span class="bg-danger p-1 rounded">قبل الخصم</span></th>
+                                        <td scope="col" id="quota" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">سعر الباقة بعد الخصم شامل ضريبه القيمة المضافة</th>
-                                        <td scope="col" id="discount_vat"></td>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة  شامل ضريبه القيمة المضافة <span class="bg-secondary p-1 rounded">بعد الخصم</span></th>
+                                        <td scope="col" id="discount_vat" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">سعر الباقة بدون الضريبة</th>
-                                        <td scope="col" id="quota"></td>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة بدون الضريبة</th>
+                                        <td scope="col" id="quota1" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">سعر الباقة بعد الخصم غير شامل ضريبة القيمة المضافة</th>
-                                        <td scope="col" id="discount_without_vat"></td>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة بعد الخصم غير شامل ضريبة القيمة المضافة</th>
+                                        <td scope="col" id="discount_without_vat" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
                                 
                                     
