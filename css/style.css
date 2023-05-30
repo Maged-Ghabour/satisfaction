@@ -1,0 +1,11 @@
+.output{
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 5px 5px 10px #e8e8e8,
+        -5px -5px 10px #ffffff;
+}
+
+body{
+ font-family: 'Cairo', sans-serif;
+}
+

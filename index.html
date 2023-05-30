@@ -1,0 +1,81 @@
+<!DOCTYPE html >
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Satisfaction</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar bg-dark" data-bs-theme="dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="imgs/2.png" alt="Bootstrap" width="50" height="50">
+    </a>
+    <h1 class="text-white">حساب عروض الألغاء  </h1>
+  </div>
+</nav>
+
+
+<div class="container">
+    <section class="mt-5">
+    <div class="row">
+        <form action="">
+               <div class="mb-3">
+                   <label for="quota" class="form-label w-100 text-end">الباقة</label>
+                    <select class="form-select" aria-label="Default select example" dir="rtl" id="price">
+                        <option  selected disabled>اختار الباقة الي عليها العميل</option>
+                        <option value="138.8">140</option>
+                        <option value="193.8">200</option>
+                        <option value="239.4">250</option>
+                        <option value="387.6">400</option>
+                        <option value="570">600</option>
+                    </select>
+               </div>
+                 <div class="mb-3">
+                   <label for="quota" class="form-label w-100 text-end">%نسبة الخصم </label>
+                    <select class="form-select" aria-label="Default select example" dir="rtl" id="discount"> 
+                        <option   selected disabled>اختار نسبة الخصم </option>
+                        <option value="25">25%</option>
+                        <option value="50">50%</option>
+                    </select>
+               </div>
+               <div class="output my-5 p-3">
+                <div class="table-responsive">
+                        <table class="table" dir="rtl">
+                            <body>
+                                    <tr>
+                                        <th scope="col">سعر الباقة شامل الضريبة</th>
+                                        <td scope="col" id="quota"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">سعر الباقة بعد الخصم شامل ضريبه القيمة المضافة</th>
+                                        <td scope="col" id="discount_vat"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="col">سعر الباقة بعد الخصم غير شامل ضريبة القيمة المضافة</th>
+                                        <td scope="col" id="discount_without_vat"></td>
+                                    </tr>
+                                
+                                    
+                                    
+                            </body>
+                        </table>
+                    </div>
+               </div>
+        </form>
+    </div>
+</section>
+
+</div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
