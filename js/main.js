@@ -14,19 +14,19 @@ let quota1 = document.getElementById('quota1');
 function ss() {
     switch (price.value) {
     case "138.8":
-            quota1.innerHTML = 120 + " جنية"
+            quota1.innerHTML = (120.00).toFixed(2) + " جنية"
         break;
       case "193.8":
-            quota1.innerHTML = 170+ " جنية"
+            quota1.innerHTML = (170.00).toFixed(2) + " جنية"
         break;
       case "239.4":
-            quota1.innerHTML = 210 + " جنية"
+            quota1.innerHTML = (210.00).toFixed(2) + " جنية"
         break;
       case "387.6":
-            quota1.innerHTML = 340 + " جنية"
+            quota1.innerHTML = (340.00).toFixed(2) + " جنية"
         break;
       case "570":
-            quota1.innerHTML = 500 + " جنية"
+            quota1.innerHTML = (500.00).toFixed(2) + " جنية"
         break;
 
     default:

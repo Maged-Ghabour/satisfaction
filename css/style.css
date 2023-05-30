@@ -10,3 +10,13 @@ body{
  font-family: 'Cairo', sans-serif;
 }
 
+table {
+    border-collapse: separate;
+    border-spacing: 0 .6em;
+    padding: 20px;
+}
+
+
+th,td,tr{
+    padding: .9em !important;
+}
