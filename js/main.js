@@ -15,18 +15,18 @@ let discount = document.getElementById("discount")
 
 
 price.addEventListener("change", function () {
-    quota.innerHTML = price.value;
-    discount_vat.innerHTML = getPrice().toFixed(2)
+    quota.innerHTML = Number(price.value).toFixed(2) + " جنية";
+    discount_vat.innerHTML = getPrice().toFixed(2) + " جنية"
 })
 
 
 function getPrice(){
     let numVal1 = Number(price.value) || 0;
-    let numVal2 = Number(discount.value) / 100;
+    let numVal2 = Number(discount.value) / 100 || 0;
     let total = numVal1 - (numVal1 * numVal2)
     return total;
 }
 
 discount.addEventListener("change", function () {
-    discount_vat.innerHTML = getPrice().toFixed(2)
+    discount_vat.innerHTML = getPrice().toFixed(2) + " جنية"
 })
